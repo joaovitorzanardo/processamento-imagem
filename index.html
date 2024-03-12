@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    <title>Aula 1</title>
+</head>
+<body>
+    <div id="display">
+        <div id="color"></div>
+    </div>
+    <div id="div-input">
+        <div id="rgb">
+            <h1>RGB</h1>
+            <div>
+                <label for="input-red">Red (R)</label>
+                <input id="input-red" type="text"/>
+            </div>
+            <div>
+                <label for="input-green">Green (G)</label>
+                <input id="input-green" type="text"/>
+            </div>
+            <div>
+                <label for="input-blue">Blue (B)</label>
+                <input id="input-blue" type="text"/>
+            </div>
+        </div>
+        <div id="hsv">
+            <h1>HSV</h1>
+            <div>
+                <label for="input-hue">Hue (H)</label>
+                <input id="input-hue" type="text"/>
+            </div>
+            <div>
+                <label for="input-sat">Saturation (S)</label>
+                <input id="input-sat" type="text"/>
+            </div>
+            <div>
+                <label for="input-val">Value (V)</label>
+                <input id="input-val" type="text"/>
+            </div>
+        </div>
+        <div id="cmyk">
+            <h1>CMYK</h1>
+            <div>
+                <label for="input-hue">Cian (C)</label>
+                <input id="input-hue" type="text"/>
+            </div>
+            <div>
+                <label for="input-sat">Magenta (M)</label>
+                <input id="input-sat" type="text"/>
+            </div>
+            <div>
+                <label for="input-val">Yellow (Y)</label>
+                <input id="input-val" type="text"/>
+            </div>
+            <div>
+                <label for="input-val">Black (K)</label>
+                <input id="input-val" type="text"/>
+            </div>
+        </div>
+    </div>
+    <div id="options">
+        <select id="from-select">
+            <option value="rgb">RGB</option>
+            <option value="hsv">HSV</option>
+            <option value="cmyk">CMYK</option>
+        </select>
+        <label>Para: </label>
+        <select id="to-select">
+            <option value="rgb">RGB</option>
+            <option value="hsv">HSV</option>
+            <option value="cmyk">CMYK</option>
+        </select>
+        <button onclick="converter()">Converter</button>
+    </div>
+    <div>
+        <button id="normalizar">Normalizar RGB</button>
+    </div>
+</body>
+</html>
